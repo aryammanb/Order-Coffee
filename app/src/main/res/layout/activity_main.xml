@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your name and the number of cups of coffee you want. Each cup costs $2."
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:layout_margin="30dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter your name here"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="84dp"
+            tools:layout_editor_absoluteY="110dp"
+            tools:layout_margin="30dp" />
+
+        <EditText
+            android:id="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter the number of cups of coffee here"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_margin="30dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            tools:layout_width="wrap_content"
+            tools:width="50dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/final_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textSize="20dp"
+            tools:layout_margin="30dp"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
